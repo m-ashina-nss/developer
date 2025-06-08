@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5f700dbb420c4e47c2cd439966f2f0e215f34b55a6fb61bdf26d862356f4b0c
-size 600
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-checkstyle-plugin</artifactId>
+    <version>3.3.0</version>
+    <configuration>
+        <configLocation>checkstyle/checkstyle.xml</configLocation>
+        <encoding>UTF-8</encoding>
+        <consoleOutput>true</consoleOutput>
+        <failsOnError>false</failsOnError>
+    </configuration>
+    <executions>
+        <execution>
+            <id>checkstyle</id>
+            <phase>validate</phase>
+            <goals>
+                <goal>check</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+

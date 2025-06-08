@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05bfed9ecb20d9535f71b14363f0fe342f2547e536f52ca93b12f8c9962a83a1
-size 299
+# ✅ .editorconfig（Checkstyleと整合するスタイル）
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.java]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+[*.md]
+trim_trailing_whitespace = false
